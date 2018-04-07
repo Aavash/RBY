@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_game_over"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#616161">
+
+    <Button
+        android:text="Restart"
+        android:textSize="30dp"
+
+        android:background="@drawable/grey_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="178dp"
+        android:id="@+id/restartButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <TextView
+        android:id="@+id/highScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yourScoreText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/yourScoreText"
+        android:layout_marginTop="64dp"
+        android:text="High Score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/yourScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score: "
+        android:textSize="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/highScoreText"
+        android:layout_alignRight="@+id/restartButton"
+        android:layout_alignEnd="@+id/restartButton"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="37dp" />
+
+</RelativeLayout>
